@@ -9,3 +9,8 @@ wheels/
 # Virtual environments
 .venv
 .env
+databrick_dbt/.gitignore
+databrick_dbt/dbt_project.yml
+databrick_dbt/profiles.yml
+connection
+databrick_dbt/README.md
