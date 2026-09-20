@@ -1,0 +1,18 @@
+sources:
+  - name: walmart_source
+    database: walmart_db2
+    schema: bronze
+
+    tables:
+      - name: orders
+
+      - name: employees
+
+      - name: stores
+
+      - name: products
+
+      - name: order_items
+
+      - name: customers
+      

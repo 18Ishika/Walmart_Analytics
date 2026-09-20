@@ -1,1 +1,1 @@
-SELECT * FROM walmart_db2.bronze.customers;
+SELECT * FROM {{ source('walmart_source','orders') }};
