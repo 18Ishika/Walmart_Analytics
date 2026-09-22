@@ -90,7 +90,7 @@ try:
 
     cursor.close()
     conn.close()
-    print("\n✓ All data loaded successfully!")
+    print("\n✓ All data loaded successfullyss.!")
 
 except Exception as e:
     print(f"Error: {e}")

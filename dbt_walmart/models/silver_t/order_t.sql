@@ -9,5 +9,5 @@ FROM
 {{ source('walmart_source','orders')}}
 WHERE is_active = 'Y'
 {% if is_incremental() %}
-    AND updated_at > (SELECT COALESCE(MAX(updated_at), '1970-01-01') FROM {{ this }})
+    AND updated_timestamp > (SELECT COALESCE(MAX(updated_timestamp), '1970-01-01') FROM {{ this }})
 {% endif %}
