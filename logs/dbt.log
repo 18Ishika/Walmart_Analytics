@@ -94,3 +94,16 @@ Runtime Error
   
 [0m12:21:15.801783 [debug] [MainThread]: Command `dbt run` failed at 12:21:15.801783 after 0.33 seconds
 [0m12:21:15.801783 [debug] [MainThread]: Flushing usage events
+[0m19:18:10.330564 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 19:18:11.043268 | 429d2ad3-b3a4-457f-8649-070307ed1de3 ==============================
+[0m19:18:11.043268 [info ] [MainThread]: Running with dbt=1.12.3
+[0m19:18:11.045469 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\deend\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt snapshot', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:18:11.047641 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\projects\Walmart_Analytics\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:18:11.052172 [debug] [MainThread]: Command `dbt snapshot` failed at 19:18:11.050441 after 1.28 seconds
+[0m19:18:11.053301 [debug] [MainThread]: Flushing usage events
